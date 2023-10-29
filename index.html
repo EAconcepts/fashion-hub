@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="all-container" class="w-full ">
+        <div id="header" class="w-full h-[40px] items-center bg-slate-900 flex flex-row p-2">
+            <h2 class="lg:text-3xl  md:text-lg w-[280px] md:w-[250px] sm:w-[250px] lg:w-[280px] font-bold text-white uppercase ">Fashion Hub</h2>
+            <form class="w-full md:h-[32px] sm:h-[30px] flex flex-row justify-center ">
+                <input type="search" id="search-text" class="sm:w-[250px] md:w-[300px] lg:w-[400px] h-full rounded md:-ml-[160px] lg:-ml-[280px]"/>
+            </form>
+        </div>
+            <p id="search-info" class="p-4 text-lg"></p>
+        <div id="all-products" class="w-full flex flex-wrap justify-around mt-12 gap-y-12 p-4">
+            <p id="loading"></p>
+        </div>
+        <div id="paginations"></div>
+    </div>
+    <script src='/script.js'></script>
+</body>
+</html>
