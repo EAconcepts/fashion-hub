@@ -39,7 +39,7 @@ const appendMovies = (movies) => {
   movies.forEach((movie) => {
     const movieCard = document.createElement("div");
     movieCard.className =
-      "md:w-[400px] w-[320px] md:h-[500px] h-[400px] border p-2 border-slate-200 rounded flex flex-col gap-y-4 relative";
+      "md:w-[350px] shadow-md shadow-slate-300 w-[300px] md:h-[440px] h-[320px] border p-2 border-slate-200 rounded flex flex-col gap-y-4 relative";
     allProducts.appendChild(movieCard);
     createMovieElements(movie, movieCard);
   });
@@ -48,13 +48,13 @@ const createMovieElements = (movie, movieCard) => {
   const productImg = document.createElement("img");
   productImg.src = movie.image;
   productImg.alt = movie.title;
-  productImg.className = "w-full md:h-[300px] h-[230px] object-cover object-top";
+  productImg.className = "w-full md:h-[270px] h-[200px] object-cover object-top";
   movieCard.appendChild(productImg);
   const detailsCont = document.createElement("div");
   detailsCont.className = "flex flex-col h-full justify-between";
   movieCard.appendChild(detailsCont);
   const productTitle = document.createElement("h3");
-  productTitle.innerHTML = movie.title;
+  productTitle.innerHTML = movie.title.substring(0, 59)
   productTitle.className = "md:text-xl ";
   detailsCont.appendChild(productTitle);
   const productDesc = document.createElement("p");
