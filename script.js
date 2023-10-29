@@ -39,7 +39,7 @@ const appendMovies = (movies) => {
   movies.forEach((movie) => {
     const movieCard = document.createElement("div");
     movieCard.className =
-      "md:w-[350px] shadow-md shadow-slate-300 w-[300px] md:h-[440px] h-[320px] border p-2 border-slate-200 rounded flex flex-col gap-y-4 relative";
+      "md:w-[350px] shadow-md shadow-slate-300 w-[300px] md:h-[440px] h-[340px] border p-2 border-slate-200 rounded flex flex-col gap-y-4 relative";
     allProducts.appendChild(movieCard);
     createMovieElements(movie, movieCard);
   });
